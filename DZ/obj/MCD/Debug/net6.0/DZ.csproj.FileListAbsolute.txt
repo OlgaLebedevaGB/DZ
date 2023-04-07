@@ -1,0 +1,15 @@
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.csproj.AssemblyReference.cache
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.AssemblyInfoInputs.cache
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.AssemblyInfo.cs
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.csproj.CoreCompileInputs.cache
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\bin\MCD\Debug\net6.0\DZ.exe
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\bin\MCD\Debug\net6.0\DZ.deps.json
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\bin\MCD\Debug\net6.0\DZ.runtimeconfig.json
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\bin\MCD\Debug\net6.0\DZ.dll
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\bin\MCD\Debug\net6.0\DZ.pdb
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.dll
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\refint\DZ.dll
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.pdb
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\DZ.genruntimeconfig.cache
+C:\Users\Оля\Desktop\Учеба на программиста\Знакомство с языками программирования\1\DZ\obj\MCD\Debug\net6.0\ref\DZ.dll
