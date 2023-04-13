@@ -17,17 +17,24 @@
 
 // Console.WriteLine($"New version of {randNumber} is {shortNumber}");
 
+
+// Булевый вид метода
 // bool IsEven(int num)
 // {
 //     if(num % 2 ==0)
 //         return true;
 //     else
 //         return false;
-// }bool result = IsEven(4);
+// }
+// bool result = IsEven(4);
 // Console.WriteLine(result);
 
 // или
-
+if(IsEven(4))
+    Console.WriteLine("Yes");
+else
+    Console.WriteLine("No");
+    
 
 
 //Задача - Напишите программу, которая выводит случайное число 
