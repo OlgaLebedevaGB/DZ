@@ -1,66 +1,66 @@
-﻿// void ShowRange(int quad)
+﻿//Метод ссобщает номер четверти
+// Программа принимает номер и сообщает значение переменных х и y
+// void ShowRange(int quard)
 // {
-//     if(quard ==1) Console.WriteLine("x>0 and y>0");
+//     if(quard ==1) Console.WriteLine("x > 0 and y > 0");
 //     else if (quard == 2) Console.WriteLine("x < 0 and y > 0");
 //     else if (quard == 3) Console.WriteLine("x < 0 and y < 0");
 //     else if (quard == 4) Console.WriteLine("x > 0 and y < 0");
 //     else Console.WriteLine("Неверный номер четверти");
 // }
 
-// Console.Write("Введите номер четверти");
-// int 
+// Console.Write("Введите номер четверти": );
+// int quard = Convert.ToInt32(Console.ReadLine());
+// ShowRange(quard); 
 
 
 // Task 2(not void). Напишите программу, которая принимает на вход координаты точки (X и Y),
 //         и выдаёт номер четверти плоскости, в которой находится эта точка.
-int ShowQuad(int x, int y)
-{
-    if(x > 0 && y > 0) 
-        return 1;
-    else if(x<0 && y>0)
-        return 2;
-    else if(x<0 && y<0)
-        return 3;
-    else if(x>0 && y<0)
-        return 4;
-    else 
-        return -1;
-}
-Console.WriteLine("Input coordinat X");
-int X = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input coordinat Y");
-int Y = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(ShowQuad(X,Y));
+// int ShowQuad(int x, int y)
+// {
+//     if(x > 0 && y > 0) 
+//         return 1;
+//     else if(x<0 && y>0)
+//         return 2;
+//     else if(x<0 && y<0)
+//         return 3;
+//     else if(x>0 && y<0)
+//         return 4;
+//     else 
+//         return -1;
+// }
+// Console.WriteLine("Введите координаты точки X");
+// int X = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты точки Y");
+// int Y = Convert.ToInt32(Console.ReadLine());
+// int result = ShowQuad(X,Y);
+// Console.WriteLine($"Точка находится в {result} четверти плоскости");
 
 
-
-// Task 3. Напишите программу, 
-//         которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
-
-int num = EnterNum("Введите число: ");
-Quad(num);
+// // Task 3. Напишите программу, 
+// //         которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
 
 
-int EnterNum(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+// int EnterNum(string message)
+// {
+//     Console.Write(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
 
+// void Quad(int num)
+// {
+//     int current = 1;
+//     while(current <= num)
+//     {
+//         Console.WriteLine($"{current} - {current * current}");
+//         current++;
+//     }
+// }
+// int num = EnterNum("Введите число: ");
+// Quad(num);
 
-void Quad(int num)
-{
-    int current = 1;
-    while(current <= num)
-    {
-        Console.WriteLine($"{current} - {current * current}");
-        current++;
-    }
-}
-
-
-// Task 4. Напишите программу, которая принимает на вход координаты двух точек 
-//         и находит расстояние между ними в 2D пространстве.
+// // Task 4. Напишите программу, которая принимает на вход координаты двух точек 
+// //         и находит расстояние между ними в 2D пространстве.
 double Gipot (double x1, double y1, double x2, double y2)
 {
     double distX = x2-x1;
