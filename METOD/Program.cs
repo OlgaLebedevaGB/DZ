@@ -14,13 +14,13 @@
 
 
 // Булевый вид метода
-bool IsEven(int num)
-{
-    if(num % 2 ==0)
-        return true;
-    else
-        return false;
-}
+// bool IsEven(int num)
+// {
+//     if(num % 2 ==0)
+//         return true;
+//     else
+//         return false;
+// }
 // bool result = IsEven(4);
 // Console.WriteLine(result);
              // или
@@ -28,6 +28,13 @@ bool IsEven(int num)
 //     Console.WriteLine("Yes");
 // else
 //     Console.WriteLine("No");
+                // или
+bool IsEven(int value)
+{
+    return value % 2 == 0;
+}
+
+
 
 
 // метод ввоза значения и конвертации в натуральное число
@@ -225,7 +232,7 @@ double[] CreateRandomArray(int size, double minValue, double maxValue)
 { 
     double[] array = new double[size]; 
     for(int i = 0; i < size; i++) 
-        array[i] = new Random().NextDouble() * (maxValue - minValue) + minValue; 
+        array[i] = new Random().NextDouble() * (maxValue - minValue) + minValue;
              
     return array; 
 } 
@@ -325,3 +332,40 @@ int[] Fibonacci (int num1, int num2, int razm)
     for (int i=2; i<razm; i++) array[i]=array[i-1]+array[i-2];// предыдущий элемент = i-1 и т.д.
     return array;
 }
+
+
+// метод генерации двумерных массивов
+int[,] CreateRandom2dArray(int rows, int columns, int maxValue, int minValue) // rows - строки; columns - столбцы; максимальное значение; минимальное значение пределов
+{
+    int[,] array = new int[rows, columns];
+
+    for (int i = 0; i < rows; i++)// заполняем все строки от 0 до rows
+        for (int j = 0; j < columns; j++)// заполяем все столбцы от 0 до columns
+            array[i,j] = new Random().Next(minValue, maxValue +1);
+
+    return array;
+}
+// Console.Write("Ввведите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Ввведите количество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введиде минимальное значение: ");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введиде максимальное значение: ");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
+
+// int[,] myArray = CreateRandom2dArray(rows, columns, minValue, maxValue);
+
+//метод вывода двумерного массива на экран
+void Show2dArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j]+ " ");
+
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+// Show2dArray(myArray);
