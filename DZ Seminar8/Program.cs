@@ -200,5 +200,3 @@ else
 // Show2dArray(mas);
 // SpiralCreate2dArray(mas, rows, columns);
 // Show2dArray(mas);
-
-
