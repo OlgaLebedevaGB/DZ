@@ -127,9 +127,3 @@ Show2dArray(myArray);
 double[] resultArray = AverageColumn(myArray);
 ShowArrayDouble(resultArray);
 
-globalg
-
-ggggg
-gggggggggggggggggggg
-kkkkkkkkk
-kkkkkkkkkk

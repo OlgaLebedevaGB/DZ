@@ -354,7 +354,7 @@ int[,] CreateRandom2dArray(int rows, int columns, int maxValue, int minValue) //
 // Console.Write("Введиде максимальное значение: ");
 // int maxValue = Convert.ToInt32(Console.ReadLine());
 
-// int[,] myArray = CreateRandom2dArray(rows, columns, minValue, maxValue);
+// int[,] myArray = CreateRandom2dArray(rows, columns, maxValue, minValue);
 
 //метод вывода двумерного массива на экран
 void Show2dArray(int[,] array)
@@ -369,3 +369,63 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 // Show2dArray(myArray);
+
+метод сортировки по возрастанию двумерного массива
+void Main(int[,] myArray, int rows, int columns)
+{
+    Console.WriteLine("Исходный массив");
+    Show2dArray(myArray);
+    Console.WriteLine("Сортировка по строкам: ");
+    int[] row = new int[columns];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+            row[j] = myArray[i, j];
+        Sort(row);
+        Insert(true, i, row, myArray);
+    }
+    Show2dArray(myArray);
+    Console.WriteLine("Сортировка по столбцам: ");
+    int[] col = new int[rows];
+    for (int i = 0; i < columns; i++)
+    {
+        for (int j = 0; j < rows; j++)
+            col[j] = myArray[j, i];
+        Sort(col);
+        Insert(false, i, col, myArray);
+    }
+     Show2dArray(myArray);
+}
+void Insert(bool isRow, int dim, int[] source, int[,] dest)
+{
+    for (int k = 0; k < source.Length; k++)
+    {
+        if (isRow)
+            dest[dim, k] = source[k];
+        else
+            dest[k, dim] = source[k];
+    }
+}
+
+
+
+// метод вывода-печати трехмерного массива
+// void Show3dArray(int[,,] array)
+// {
+//     for(int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for(int n = 0; n < array.GetLength(2); n++)
+//             {
+//                 Console.Write($"{array[i,j,n]} {(i, j, n)} ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
+//     Console.WriteLine();
+// }
+
+// int[,,] array3D = new int[2, 2, 2] { { { 11, 22}, { 33, 44 } },
+//                                     { { 55, 66 }, { 77, 88 } } };
+// Show3dArray(array3D);
